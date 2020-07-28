@@ -24,7 +24,7 @@ public class SeleniumByTestNG  extends TestNgFrameWorkBasic {
 		}catch(Exception ex) {
 			Assert.assertTrue(false, ex.toString());
 		}
-		System.out.println(data.length);
+		//System.out.println(data.length);
 		return data;
 	}
 	
