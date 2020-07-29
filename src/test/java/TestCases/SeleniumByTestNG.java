@@ -7,7 +7,6 @@ import com.codoid.products.exception.FilloException;
 
 
 import CommonLIB.ExcelRead;
-import CommonLIB.GetBrowserElement;
 import CommonLIB.ObjectCreationClass;
 import CommonLIB.TestNgFrameWorkBasic;
 import Repositories.CommonRepository;
@@ -29,8 +28,9 @@ public class SeleniumByTestNG  extends TestNgFrameWorkBasic {
 	}
 	
 	@Test(dataProvider="getTestData")
-	public void TestCases1(String username) throws Exception{
+	public void Eccom_TestCases1(String username) throws Exception{
 		ObjectCreationClass.ComLiB.FocusOnUrl(CommonRepository.StrtestUrl);
+		
 		ObjectCreationClass.HomePD.SearchProduct(username);
 		ObjectCreationClass.SearchD.Select1stProduct();
 		ObjectCreationClass.ChecKOut.AddtoCart();

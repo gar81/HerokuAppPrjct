@@ -10,7 +10,6 @@ public class TestNgFrameWorkBasic  {
 	public void SetDataProvider() {
 		
 	}
-
 	@BeforeTest
 	@Parameters({ "browser","implicitWait" })
 	public void BeforeTest(String browser,String implicitWait) {
