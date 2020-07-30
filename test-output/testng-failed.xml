@@ -8,15 +8,15 @@
   </listeners>
   <test thread-count="5" name="Functional(failed)">
     <classes>
-      <class name="TestCases.SeleniumByTestNG">
+      <class name="TestCases.Hero2ContextTest">
         <methods>
-          <include name="TestCases1" invocation-numbers="0 1"/>
           <include name="SetDataProvider"/>
+          <include name="Hero_Context"/>
           <include name="TearDown"/>
           <include name="Cleaning"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- TestCases.SeleniumByTestNG -->
+      </class> <!-- TestCases.Hero2ContextTest -->
     </classes>
   </test> <!-- Functional(failed) -->
 </suite> <!-- Failed suite [Suite] -->

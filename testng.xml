@@ -11,7 +11,11 @@
 <classes>
 <!-- <class name="TestCases.SeleniumByTestNG"/>-->
 <!-- <class name="TestCases.HeroTest" />-->
-<class name="TestCases.Facebook"/>
+<!-- <class name="TestCases.Facebook"/>-->
+<class name="TestCases.HeroHomePageTest"/>
+<class name="TestCases.Hero2ContextTest"/>
+
+
 </classes>
 </test>
 <!-- Test -->

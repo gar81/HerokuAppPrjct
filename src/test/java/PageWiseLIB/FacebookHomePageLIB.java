@@ -24,9 +24,7 @@ public class FacebookHomePageLIB {
 	 * Name : Dropdown	  
 	 * @return as WebDriver
 	 *  ReturnType: void	 
-	 ***********************************************************************/
-
-	// DROPDOWN FEATURE ON FACEBOOK HOMEPAGE
+	 ***********************************************************************/	
 	public void Mdy(String monthvalue, String dayvalue, String yearvalue) throws Exception {
 
 		ObjectCreationClass.ComLiB
@@ -38,10 +36,11 @@ public class FacebookHomePageLIB {
 
 	}
 	
+	
 	/***********************************************************************
 	 * Name : Radiobutton	  
 	 * @return as
-	 *  ReturnType: void	 
+	 * ReturnType: void	 
 	 ***********************************************************************/
 	
 	

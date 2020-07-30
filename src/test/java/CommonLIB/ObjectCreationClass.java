@@ -2,6 +2,8 @@ package CommonLIB;
 
 import PageWiseLIB.CheckOutPageLIB;
 import PageWiseLIB.FacebookHomePageLIB;
+import PageWiseLIB.Hero2ContextMenuPageLIB;
+import PageWiseLIB.HeroHomePageLIB;
 import PageWiseLIB.HomePageLIB;
 import PageWiseLIB.SearchDeatailsPageLIB;
 
@@ -15,4 +17,11 @@ public class ObjectCreationClass{
 	 
 	 //FACEBOOK HOMEPAGE
 	 public static FacebookHomePageLIB fc= new FacebookHomePageLIB();
+	 
+	 //HERO HOMEPAGE
+	 public static HeroHomePageLIB hb= new HeroHomePageLIB();
+	 
+	//HEROCONTEXTMENU PAGE
+	 public static Hero2ContextMenuPageLIB cb= new Hero2ContextMenuPageLIB();
+	 
 }
