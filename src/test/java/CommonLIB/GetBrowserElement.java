@@ -1,6 +1,5 @@
 package CommonLIB;
 
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
@@ -21,7 +20,7 @@ public class GetBrowserElement   {
 	 * @return  as WebDriver
 	 * ReturnType: Webdriver
 	 * 
-	 * 
+	 
 	 ***********************************************************************/
 	public static void BrowserLaunch(String browser,String implicitWait) {	
 	if(browser.equalsIgnoreCase("chrome")) {
@@ -73,7 +72,7 @@ public class GetBrowserElement   {
 
 	}
 	
-		/***********************************************************************
+	/***********************************************************************
 	 * Name : getWebElementByXpath
 	 * @return 
 	 * ReturnType: WebElement
@@ -90,6 +89,28 @@ public class GetBrowserElement   {
 		}
         return null;
 	}
+	
+	
+	/***********************************************************************
+	 * Name : getWebElementsByXpath
+	 * @return 
+	 * ReturnType: WebElements
+	
+	 ***********************************************************************/
+
+	public static List<WebElement> getWebElementsByXpath (By xpath) {
+		List<WebElement> ele=driver.findElements(xpath);
+		if (ele!=null) {
+			return ele;
+			
+		}else {
+			Assert.assertTrue(false, "Element not Found!"); // Here you can use custom exception
+		}
+        //return null;
+		return ele;
+	}
+	
+	
 	/**************************************************************
 	 *  FunctionName: WaitforElementToReturn
 	 * Argument : intmilisecond, string

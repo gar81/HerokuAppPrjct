@@ -1,12 +1,10 @@
 package CommonLIB;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 
 public class CommonFunctionLib {
 	public static  RemoteWebDriver driver;
@@ -31,39 +29,36 @@ public class CommonFunctionLib {
 	 * @throws Exception 
 	 * @throws IOException 
 	 ********************************************************************/
-	public   void  ClickObject(WebElement ele) throws Exception{
-		previuosDomproperty= GetBrowserElement.getDriver().getPageSource().toString();
+	public void ClickObject(WebElement ele) throws Exception {
+		previuosDomproperty = GetBrowserElement.getDriver().getPageSource().toString();
 
 		ele.click();
 		GetBrowserElement.PageReadyStateCheck(3000);
 		AfterDomproperty = GetBrowserElement.getDriver().getPageSource().toString();
 
-		while(previuosDomproperty.equals(AfterDomproperty)){
+		while (previuosDomproperty.equals(AfterDomproperty)) {
 			GetBrowserElement.getJavascriptExecuter().executeScript("arguments[0].click();", ele);
-			AfterDomproperty="";
+			AfterDomproperty = "";
 			AfterDomproperty = GetBrowserElement.getDriver().getPageSource().toString();
-			if (i==3) {
+			if (i == 3) {
 				GetBrowserElement.getJavascriptExecuter().executeScript("arguments[0].click();", ele);
-				previuosDomproperty=null;
-				AfterDomproperty=null;
-				i=0;
-				Assert.assertTrue(false,"click on Object is failed");
+				previuosDomproperty = null;
+				AfterDomproperty = null;
+				i = 0;
+				Assert.assertTrue(false, "click on Object is failed");
 				break;
 			}
 			i++;
 
-		}			
-		previuosDomproperty=null;
-		AfterDomproperty=null;
-		i=0;
+		}
+		previuosDomproperty = null;
+		AfterDomproperty = null;
+		i = 0;
 	}
-
-
-
 
 	/************************************************
 	 * FunctionName: SetOnparam
-	 * Argument :
+	 * Argument : 
 	 * 
 	 *************************************************/
 	public void SetOnparam(WebElement element,String strtestdata)  {
@@ -83,19 +78,16 @@ public class CommonFunctionLib {
 		}catch(Exception ex) {
 			
 			Assert.assertTrue(false,"Exception is "+ ex.toString() + " for causing :" + ex.getMessage());
-		}
-
-	
+		}	
 	}	
-	
 	
 
 	/************************************************
 	 * FunctionName: SelectOnparam
-	 * Argument :
+	 * Argument : WebElements
 	 * 
 	 *************************************************/
-	public void SelectOnparam(WebElement element,String strVisiableText)  {
+	public void selectOnparam(WebElement element,String strVisiableText)  {
 		try {
 
 			if (!strVisiableText.equals("")) {
@@ -107,9 +99,7 @@ public class CommonFunctionLib {
 					Assert.assertTrue(true,strVisiableText+" is selected");
 				}else {
 					Assert.assertTrue(true,strVisiableText+" is not selected. Please check once!");
-				}
-				
-				
+				}			
 				
 				Assert.assertTrue(true,"Typing is Successfull");
 			}else {
@@ -120,9 +110,23 @@ public class CommonFunctionLib {
 		}catch(Exception ex) {
 			
 			Assert.assertTrue(false,"Exception is "+ ex.toString() + " for causing :" + ex.getMessage());
+		}	
+	}
+
+
+/************************************************
+ * FunctionName: SelectOnparam1
+ * Argument : WebElements
+ * 
+ *************************************************/
+	public void selectOnparam1(WebElement element, String value) {
+		try {
+			Select select = new Select(element);
+			select.selectByVisibleText(value);
 		}
 
-	
+		catch (Exception ex) {
+			Assert.assertTrue(false, "Exception is " + ex.toString() + " for causing :" + ex.getMessage());
+		}		
 	}
 }
-

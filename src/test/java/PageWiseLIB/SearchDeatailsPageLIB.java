@@ -1,6 +1,5 @@
 package PageWiseLIB;
 
-
 import CommonLIB.GetBrowserElement;
 import CommonLIB.ObjectCreationClass;
 import Repositories.SearchResultPageRepository;
