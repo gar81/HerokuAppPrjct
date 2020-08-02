@@ -2,9 +2,11 @@ package CommonLIB;
 
 import PageWiseLIB.CheckOutPageLIB;
 import PageWiseLIB.FacebookHomePageLIB;
-import PageWiseLIB.Hero2ContextMenuPageLIB;
+import PageWiseLIB.HeroDragDropPageLIB;
+import PageWiseLIB.HeroHomeBrokenImgsPageLIB;
 import PageWiseLIB.HeroHomePageLIB;
 import PageWiseLIB.HomePageLIB;
+import PageWiseLIB.HorizSlidrPageLIB;
 import PageWiseLIB.SearchDeatailsPageLIB;
 
 public class ObjectCreationClass{
@@ -21,7 +23,15 @@ public class ObjectCreationClass{
 	 //HERO HOMEPAGE
 	 public static HeroHomePageLIB hb= new HeroHomePageLIB();
 	 
-	//HEROCONTEXTMENU PAGE
-	 public static Hero2ContextMenuPageLIB cb= new Hero2ContextMenuPageLIB();
+	//BROKEN IMGES PAGE OF HEROKUAPP
+	 public static HeroHomeBrokenImgsPageLIB bi= new HeroHomeBrokenImgsPageLIB();
+	 
+	//DRAG N DROP OF PAGE HEROKUAPP
+	 public static HeroDragDropPageLIB dp= new HeroDragDropPageLIB();
+	 
+	 //HORIZONTAL SLIDER OF PAGE HEROKUAPP
+	 public static HorizSlidrPageLIB hs= new HorizSlidrPageLIB ();
+	 
+	 
 	 
 }

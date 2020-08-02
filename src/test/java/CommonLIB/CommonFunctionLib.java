@@ -2,6 +2,7 @@ package CommonLIB;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -21,8 +22,8 @@ public class CommonFunctionLib {
 		GetBrowserElement.getDriver().get(strurl);
 		GetBrowserElement.getDriver().manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		GetBrowserElement.PageReadyStateCheck(3000);
-
 	}
+	
 	/*******************************************************************
 	 *  FunctionName: ClickObject
 	 * Argument : WebElement
@@ -129,4 +130,26 @@ public class CommonFunctionLib {
 			Assert.assertTrue(false, "Exception is " + ex.toString() + " for causing :" + ex.getMessage());
 		}		
 	}
+	
+	/************************************************
+	 * FunctionName: Action class for horizontal slider
+	 * Argument : WebElements
+	 * 
+	 *************************************************/
+	/*public void slidr() {
+		Actions action= new Actions(GetBrowserElement.getDriver());
+		
+		
+		
+		
+		
+	}*/
+	
+	
+	
+	
+	
+	
+	
+	
 }

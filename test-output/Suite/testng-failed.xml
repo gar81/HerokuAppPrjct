@@ -8,15 +8,11 @@
   </listeners>
   <test thread-count="5" name="Functional(failed)">
     <classes>
-      <class name="TestCases.Hero2ContextTest">
+      <class name="TestCases.HorizSlidrPageTest">
         <methods>
-          <include name="SetDataProvider"/>
-          <include name="Hero_Context"/>
-          <include name="TearDown"/>
-          <include name="Cleaning"/>
-          <include name="BeforeTest"/>
+          <include name="sldr"/>
         </methods>
-      </class> <!-- TestCases.Hero2ContextTest -->
+      </class> <!-- TestCases.HorizSlidrPageTest -->
     </classes>
   </test> <!-- Functional(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -12,12 +12,13 @@
 <!-- <class name="TestCases.SeleniumByTestNG"/>-->
 <!-- <class name="TestCases.HeroTest" />-->
 <!-- <class name="TestCases.Facebook"/>-->
-<class name="TestCases.HeroHomePageTest"/>
-<class name="TestCases.Hero2ContextTest"/>
+<!-- <class name="TestCases.HeroHomePageTest"/>-->
+<!-- <class name="TestCases.HeroBroknImgsTest"/>-->
+ <class name="TestCases.DragDropPageTest"/>
+ <!-- <class name="TestCases.HorizSlidrPageTest"/>-->
 
 
 </classes>
 </test>
-<!-- Test -->
 
 </suite>

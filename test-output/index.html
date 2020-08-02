@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,24 +102,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.Hero2ContextTest" class="method navigator-link" hash-for-method="Hero_Context">Hero_Context</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.HorizSlidrPageTest" class="method navigator-link" hash-for-method="sldr">sldr</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.HeroHomePageTest" class="method navigator-link" hash-for-method="Hero_ContextMenu">Hero_ContextMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,40 +120,23 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestCases.Hero2ContextTest</span>
+              <span class="class-name">TestCases.HorizSlidrPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Hero_Context">
-                  </a> <!-- Hero_Context -->
-                  <span class="method-name">Hero_Context</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0
-	at java.base/java.util.Collections$EmptyList.get(Collections.java:4483)
-	at CommonLIB.GetBrowserElement.getWebElementByXpath(GetBrowserElement.java:85)
-	at PageWiseLIB.Hero2ContextMenuPageLIB.HeroContext(Hero2ContextMenuPageLIB.java:16)
-	at TestCases.Hero2ContextTest.Hero_Context(Hero2ContextTest.java:16)
+                  <a name="sldr">
+                  </a> <!-- sldr -->
+                  <span class="method-name">sldr</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at CommonLIB.CommonFunctionLib.FocusOnUrl(CommonFunctionLib.java:21)
+	at TestCases.HorizSlidrPageTest.sldr(HorizSlidrPageTest.java:13)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.HeroHomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Hero_ContextMenu">
-                  </a> <!-- Hero_ContextMenu -->
-                  <span class="method-name">Hero_ContextMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -185,8 +154,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Functional&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.HeroHomePageTest&quot;/&gt;
-      &lt;class name=&quot;TestCases.Hero2ContextTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.HorizSlidrPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Functional --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -200,7 +168,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Functional (2 classes)</span>
+                <span class="test-name">Functional (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,20 +194,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Hero_Context')
-data.setCell(0, 2, 'TestCases.Hero2ContextTest')
-data.setCell(0, 3, 11690);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Hero_ContextMenu')
-data.setCell(1, 2, 'TestCases.HeroHomePageTest')
-data.setCell(1, 3, 1284);
+data.setCell(0, 1, 'sldr')
+data.setCell(0, 2, 'TestCases.HorizSlidrPageTest')
+data.setCell(0, 3, 224);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 224 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -254,22 +218,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.Hero2ContextTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">SetDataProvider</span>
-                <br/>
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">Cleaning</span>
-                <br/>
-                <span class="ignored-method-name">BeforeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -278,37 +229,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.HeroHomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">SetDataProvider</span>
+              <div class="chronological-class-name">TestCases.HorizSlidrPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sldr</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">BeforeTest(chrome, 60)</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">Hero_ContextMenu</span>
-                <span class="method-start">6022 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.Hero2ContextTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Hero_Context</span>
-                <span class="method-start">7628 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.HeroHomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TearDown</span>
-                <span class="method-start">31347 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
