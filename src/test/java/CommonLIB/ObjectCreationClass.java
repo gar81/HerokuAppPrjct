@@ -2,6 +2,7 @@ package CommonLIB;
 
 import PageWiseLIB.CheckOutPageLIB;
 import PageWiseLIB.FacebookHomePageLIB;
+import PageWiseLIB.FileUploadPageLIB;
 import PageWiseLIB.HeroDragDropPageLIB;
 import PageWiseLIB.HeroHomeBrokenImgsPageLIB;
 import PageWiseLIB.HeroHomePageLIB;
@@ -32,6 +33,7 @@ public class ObjectCreationClass{
 	 //HORIZONTAL SLIDER OF PAGE HEROKUAPP
 	 public static HorizSlidrPageLIB hs= new HorizSlidrPageLIB ();
 	 
+	 public static FileUploadPageLIB fb= new FileUploadPageLIB ();
 	 
 	 
 }

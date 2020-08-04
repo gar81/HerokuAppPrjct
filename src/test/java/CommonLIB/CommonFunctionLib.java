@@ -57,6 +57,39 @@ public class CommonFunctionLib {
 		i = 0;
 	}
 
+	/*******************************************************************
+	 *  FunctionName: overloaded ClickObject
+	 * Argument : WebElement
+	 * @throws Exception 
+	 * @throws IOException 
+	 ********************************************************************/
+	public void ClickObject(By xpath) throws Exception {
+		previuosDomproperty = GetBrowserElement.getDriver().getPageSource().toString();
+
+		GetBrowserElement.getWebElementByXpath(xpath).click();
+		GetBrowserElement.PageReadyStateCheck(3000);
+		AfterDomproperty = GetBrowserElement.getDriver().getPageSource().toString();
+
+		while (previuosDomproperty.equals(AfterDomproperty)) {
+			GetBrowserElement.getJavascriptExecuter().executeScript("arguments[0].click();",GetBrowserElement.getWebElementByXpath(xpath));
+			AfterDomproperty = "";
+			AfterDomproperty = GetBrowserElement.getDriver().getPageSource().toString();
+			if (i == 3) {
+				GetBrowserElement.getJavascriptExecuter().executeScript("arguments[0].click();", GetBrowserElement.getWebElementByXpath(xpath));
+				previuosDomproperty = null;
+				AfterDomproperty = null;
+				i = 0;
+				Assert.assertTrue(false, "click on Object is failed");
+				break;
+			}
+			i++;
+
+		}
+		previuosDomproperty = null;
+		AfterDomproperty = null;
+		i = 0;
+	}	
+	
 	/************************************************
 	 * FunctionName: SetOnparam
 	 * Argument : 

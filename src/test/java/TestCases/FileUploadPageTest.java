@@ -6,17 +6,14 @@ import CommonLIB.ObjectCreationClass;
 import CommonLIB.TestNgFrameWorkBasic;
 import Repositories.CommonRepository;
 
-public class HorizSlidrPageTest extends TestNgFrameWorkBasic {
+public class FileUploadPageTest extends TestNgFrameWorkBasic {
 	
-@Test(priority=8, enabled=true)
+	@Test(priority=9, enabled=true)
 	
-	public void sldr() throws Exception{
+	public void Hero_FileUpload() throws Exception{
 		ObjectCreationClass.ComLiB.FocusOnUrl(CommonRepository.url2);		
 			
-		ObjectCreationClass.hs.Slider();
+		ObjectCreationClass.fb.fileUpload();
 		}
-	
-	
-	
 
 }

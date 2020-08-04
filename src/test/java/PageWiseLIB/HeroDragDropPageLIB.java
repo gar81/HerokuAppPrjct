@@ -20,9 +20,11 @@ public class HeroDragDropPageLIB {
 		//clicked on homepage drag n drop link
 	ObjectCreationClass.ComLiB.ClickObject(GetBrowserElement.getWebElementByXpath(HeroKaHomePageRepository.DragDropLink));
 	
-    Actions action= new Actions(GetBrowserElement.getDriver());	
+    Actions action= new Actions(GetBrowserElement.getDriver());
+    
 	action.clickAndHold(GetBrowserElement.getWebElementByXpath(DragDropPageRepository.src)).
 	       moveToElement(GetBrowserElement.getWebElementByXpath(DragDropPageRepository.target)).release().build().perform();
+	Thread.sleep(4000);
 	
 	
 }}

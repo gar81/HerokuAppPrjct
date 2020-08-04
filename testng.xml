@@ -13,10 +13,10 @@
 <!-- <class name="TestCases.HeroTest" />-->
 <!-- <class name="TestCases.Facebook"/>-->
 <!-- <class name="TestCases.HeroHomePageTest"/>-->
-<!-- <class name="TestCases.HeroBroknImgsTest"/>-->
- <class name="TestCases.DragDropPageTest"/>
- <!-- <class name="TestCases.HorizSlidrPageTest"/>-->
-
+<class name="TestCases.HeroBroknImgsTest"/>
+<!--  <class name="TestCases.DragDropPageTest"/>-->
+<!-- <class name="TestCases.HorizSlidrPageTest"/>-->
+ <!-- <class name="TestCases.FileUploadPageTest"/>-->
 
 </classes>
 </test>
